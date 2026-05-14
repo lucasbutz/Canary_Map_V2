@@ -761,8 +761,10 @@ in vec3 view_direction;uniform vec3 u_sun_pos;uniform vec3 u_globe_position;unif
 
       <label for="report-image">Photo (optional)</label>
       <input id="report-image" type="file" accept="image/*" capture="environment" />
-      <div id="image-placeholder" class="image-placeholder">Preview will appear here...</div>
-      <img id="image-preview" class="image-preview hidden" alt="Preview" />
+      <div id="preview-container" class="preview-container">
+        <span id="image-placeholder" class="preview-placeholder">Preview will appear here. A live uploaded picture is required in order to prevent fraudulent reports.</span>
+        <img id="image-preview" class="image-preview hidden" alt="" />
+      </div>
 
       <p id="modal-error" class="modal-error hidden">Could not find that address. Try being more specific.</p>
 
